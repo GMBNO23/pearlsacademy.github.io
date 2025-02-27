@@ -35,9 +35,11 @@ export default function Contact() {
     e.preventDefault();
     emailjs.sendForm('service_xxxxx', 'template_xxxxx', e.target as HTMLFormElement, 'user_xxxxx')
         .then((result: EmailJSResponseStatus) => {
+            console.log('EmailJS result:', result);
             alert('Message sent successfully!');
         })
         .catch((error: Error) => {
+            console.log('EmailJS error:', error);
             alert('Error sending message. Please try again.');
         });
   };
