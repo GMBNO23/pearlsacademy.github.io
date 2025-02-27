@@ -35,7 +35,7 @@ export default function AdmissionSection() {
         console.log('EmailJS result:', result);
         alert('Application submitted successfully!');
       })
-      .catch((error: any) => {
+      .catch((error: Error) => {
         console.log('EmailJS error:', error);
         alert('Error submitting application. Please try again.');
       });
