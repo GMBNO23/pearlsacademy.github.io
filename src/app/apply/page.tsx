@@ -32,9 +32,11 @@ export default function AdmissionSection() {
     
     emailjs.sendForm(serviceID, templateID, e.target as HTMLFormElement, userID)
       .then((result: EmailJSResponseStatus) => {
+        console.log('EmailJS result:', result);
         alert('Application submitted successfully!');
       })
       .catch((error: any) => {
+        console.log('EmailJS error:', error);
         alert('Error submitting application. Please try again.');
       });
   };
