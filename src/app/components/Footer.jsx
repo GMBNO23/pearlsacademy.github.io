@@ -89,7 +89,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
             <address className="not-italic text-gray-400">
               4th Avenue Behind City Mall, Nyali, Mombasa<br />
-              Nairobi, Kenya<br /><br />
+               Kenya<br /><br />
               <a href="tel:+254 734 585499" className="hover:text-white">
               +254 734 585499
               </a><br />
